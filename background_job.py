@@ -15,8 +15,8 @@ PID_FILE = "background_job.pid"
 # Gmail SMTP configuration
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
-EMAIL_ADDRESS = 
-EMAIL_PASSWORD = 
+EMAIL_ADDRESS = st.secrets["email"]
+EMAIL_PASSWORD = st.secrets["pass"]
 
 def send_email(subject, body, recipient_email):
     msg = MIMEMultipart()
